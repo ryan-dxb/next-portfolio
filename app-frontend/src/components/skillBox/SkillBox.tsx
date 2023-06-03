@@ -16,12 +16,12 @@ const SkillBox: NextPage<SkillBoxProps> = ({ icon: Icon, level, name }) => {
           <h3 className="font-semibold">{name}</h3>
         </div>
 
-        <div className="flex flex-row space-x-1">
+        <div className="flex flex-row space-x-0.5 ">
           {[...Array(5)].map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3  ${
-                index < level ? "bg-green-500" : "bg-gray-500"
+              className={`w-3 h-3 shadow-2xl  ${
+                index < level ? "bg-green-500 " : "bg-gray-500 "
               }`}
             />
           ))}
